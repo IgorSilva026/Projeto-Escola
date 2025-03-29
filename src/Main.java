@@ -7,10 +7,10 @@ public class Main {
 
     Escola escola = new Escola("Escola Igor");
 
-    Aluno aluno = new Aluno("Aluno Igor", 20,"7");
-    Aluno aluno01 = new Aluno("Aluno Fernando", 40, "12");
-    Aluno aluno02 = new Aluno("Aluno Lucilene", 50, "20");
-    Aluno aluno03 = new Aluno("Aluno Emilly", 20, "31");
+    Aluno aluno = new Aluno("Aluno Igor",20,"7");
+    Aluno aluno01 = new Aluno("Aluno Fernando",40,"12");
+    Aluno aluno02 = new Aluno("Aluno Lucilene",50,"20");
+    Aluno aluno03 = new Aluno("Aluno Emilly",20,"31");
 
     Professor professor = new Professor("Professor João", 20, "Python");
     Professor professor01 = new Professor("Professor Alfredo", 50, "MySQL");

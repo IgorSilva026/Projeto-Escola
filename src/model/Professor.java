@@ -27,9 +27,9 @@ public class Professor {
     @Override
     public String toString() {
         return "Professor{" +
-                "nomeProfessor='" + nomeProfessor + '\'' +
-                ", iadeProfessor='" + idadeProfessor + '\'' +
-                ", materiaProfessor='" + materiaProfessor + '\'' +
+                "nomeProfessor = '" + nomeProfessor + '\'' +
+                ", iadeProfessor = '" + idadeProfessor + '\'' +
+                ", materiaProfessor = '" + materiaProfessor + '\'' +
                 '}';
     }
 }
