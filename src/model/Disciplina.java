@@ -10,25 +10,9 @@ public class Disciplina {
         this.cargaHoraria = cargaHoraria;
         this.professor = professor;
     }
-
-    public String getNomeDisciplina() {
-        return nomeDisciplina;
-    }
-
-    public int getCargaHoraria() {
-        return cargaHoraria;
-    }
-
-    public Professor getProfessor() {
-        return professor;
-    }
-
-    @Override
-    public String toString() {
-        return "Disciplina{" +
-                "nomeDisciplina = '" + nomeDisciplina + '\'' +
-                ", cargaHoraria = " + cargaHoraria +
-                ", professor = " + professor +
-                '}';
+    public void exibirDestalhes(){
+        System.out.println("Nome da Disciplina: " + nomeDisciplina);
+        System.out.println("Carga Horaria: " + cargaHoraria);
+        System.out.println("Professor da Matéria: " + professor.getNomeProfessor());
     }
 }

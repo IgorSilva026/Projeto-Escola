@@ -8,36 +8,22 @@ public class Turma {
     private Professor professor;
     private ArrayList<Aluno> alunos;
 
-    public Turma(String nomeTurma, int anoTurma, Professor professor, ArrayList<Aluno> alunos) {
+    public Turma(String nomeTurma, int anoTurma, Professor professor) {
         this.nomeTurma = nomeTurma;
         this.anoTurma = anoTurma;
         this.professor = professor;
-        this.alunos = alunos;
+        this.alunos = new ArrayList<>();
     }
-
-    public String getNomeTurma() {
-        return nomeTurma;
+    public void adicionarAluno(Aluno aluno) {
+        alunos.add(aluno);
     }
+    public void listarAlunos() {
+        System.out.println("Turma: " + nomeTurma + ", ano: " + anoTurma);
+        System.out.println("Professor: " + professor.getNomeProfessor());
+        System.out.println("Alunos Matriculados");
 
-    public int getAnoTurma() {
-        return anoTurma;
-    }
-
-    public Professor getProfessor() {
-        return professor;
-    }
-
-    public ArrayList<Aluno> getAlunos() {
-        return alunos;
-    }
-
-    @Override
-    public String toString() {
-        return "Turma{" +
-                "nomeTurma='" + nomeTurma + '\'' +
-                ", anoTurma=" + anoTurma +
-                ", professor=" + professor +
-                ", alunos=" + alunos +
-                '}';
+        for (Aluno aluno : alunos) {
+            System.out.println("-" + aluno.getNomeAluno());
+        }
     }
 }

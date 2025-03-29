@@ -1,6 +1,4 @@
-import model.Aluno;
-import model.Escola;
-import model.Professor;
+import model.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -19,16 +17,27 @@ public class Main {
 
     escola.adicionaProfessor(professor);
     escola.adicionaProfessor(professor01);
+    escola.adicionaProfessor(professor02);
+    escola.adicionaProfessor(professor03);
+
     escola.adicionaAluno(aluno);
     escola.adicionaAluno(aluno01);
+    escola.adicionaAluno(aluno02);
+    escola.adicionaAluno(aluno03);
 
     escola.listarAlunos();
-        System.out.println("=========================");
-    escola.listarAlunos();
-        System.out.println("=========================");
+
+    System.out.println("=========================");
+
+    escola.listarProfessores();
+
+    System.out.println("=========================");
 
 
-
+    Turma turma = new Turma("JAVA",2025,professor);
+    Disciplina disciplina = new Disciplina("TI", 80, professor);
+    turma.listarAlunos();
+    disciplina.exibirDestalhes();
 
 
     }
