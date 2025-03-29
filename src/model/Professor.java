@@ -3,12 +3,12 @@ package model;
 public class Professor {
 
     private String nomeProfessor;
-    private String iadeProfessor;
+    private int idadeProfessor;
     private String materiaProfessor;
 
-    public Professor(String nomeProfessor, String iadeProfessor, String materiaProfessor) {
+    public Professor(String nomeProfessor, int idadeProfessor, String materiaProfessor) {
         this.nomeProfessor = nomeProfessor;
-        this.iadeProfessor = iadeProfessor;
+        this.idadeProfessor = idadeProfessor;
         this.materiaProfessor = materiaProfessor;
     }
 
@@ -16,8 +16,8 @@ public class Professor {
         return nomeProfessor;
     }
 
-    public String getIadeProfessor() {
-        return iadeProfessor;
+    public int getIdadeProfessor() {
+        return idadeProfessor;
     }
 
     public String getMateriaProfessor() {
@@ -28,7 +28,7 @@ public class Professor {
     public String toString() {
         return "Professor{" +
                 "nomeProfessor='" + nomeProfessor + '\'' +
-                ", iadeProfessor='" + iadeProfessor + '\'' +
+                ", iadeProfessor='" + idadeProfessor + '\'' +
                 ", materiaProfessor='" + materiaProfessor + '\'' +
                 '}';
     }

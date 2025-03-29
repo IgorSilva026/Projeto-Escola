@@ -2,13 +2,13 @@ package model;
 
 import java.util.ArrayList;
 
-public class escola {
+public class Escola {
 
     private String nomeEscola;
     private ArrayList<Professor> professores;
     private ArrayList<Aluno> alunos;
 
-    public escola(String nome) {
+    public Escola(String nome) {
         this.nomeEscola = nome;
         this.professores = new ArrayList<>();
         this.alunos = new ArrayList<>();
